@@ -8,6 +8,7 @@ public class Ave extends Animal{
     }
 
     public void mover(){
+        setLocalizacao(getLocalizacao() + 3);//Preciso entender melhor isso
         System.out.println("Ave" + this.getNome() + " voando *****>");
         int localAtual = getLocalizacao();
         localAtual += 3;
@@ -16,8 +17,10 @@ public class Ave extends Animal{
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return super.toString();
+        return   ", Nome()=" + getNome() +
+                 ", Patas()=" + getPatas() +
+                 ", Velociadade()="+ getVelociadade() +
+                 ", Localizacao()=" + getLocalizacao() + "]";
     }
 
 }
